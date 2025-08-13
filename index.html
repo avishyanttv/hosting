@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <div class="animated-background"></div>
+
     <header>
         <div class="container">
             <h1>Your Server Name</h1>
@@ -21,32 +23,58 @@
         </div>
     </header>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Our Server</h2>
-            <p>Welcome to Your Server Name! We are a community-driven Minecraft server focused on providing a fun and engaging experience for all players. We offer a friendly community and a dedicated staff team.</p>
-        </section>
-
-        <section id="features">
-            <h2>Server Features</h2>
-            <ul>
-                <li>Survival Multiplayer (SMP)</li>
-                <li>Custom plugins and features</li>
-                <li>Regular events and challenges</li>
-                <li>Active and friendly staff</li>
-                <li>Discord integration</li>
-            </ul>
-        </section>
-
-        <section id="join">
-            <h2>How to Join</h2>
-            <p>Ready to start your adventure? Join us by adding our server to your Minecraft client. The IP address is:</p>
-            <div class="server-info">
-                <span id="server-ip">play.yourserver.com</span>
-                <button id="copy-button">Copy IP</button>
-                <div id="status-message">Server Status: <span id="server-status">Offline</span></div>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>The Ultimate Minecraft Experience Awaits</h2>
+                    <p>Join a thriving community, explore unique worlds, and build your legacy on our server.</p>
+                    <div class="server-info">
+                        <span id="server-ip" class="glowing-text">play.yourserver.com</span>
+                        <button id="copy-button" class="glowing-button">Copy IP</button>
+                    </div>
+                    <div class="player-count">
+                        Players Online: <span id="player-count">--</span>
+                    </div>
+                </div>
             </div>
-            <p>Follow us on our Discord for the latest news and updates!</p>
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="container">
+                <h2>About Our Server</h2>
+                <p>Welcome to Your Server Name! We are a community-driven Minecraft server focused on providing a fun and engaging experience for all players. We offer a friendly community and a dedicated staff team.</p>
+            </div>
+        </section>
+
+        <section id="features" class="fade-in">
+            <div class="container">
+                <h2>Server Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Survival Multiplayer (SMP)</h3>
+                        <p>Explore a vast world in our custom-built survival mode.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Custom Plugins</h3>
+                        <p>Enjoy unique plugins and features that enhance gameplay.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Regular Events</h3>
+                        <p>Participate in server-wide events and win exclusive rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="fade-in">
+            <div class="container">
+                <h2>How to Join</h2>
+                <p>Ready to start your adventure? Join us by adding our server to your Minecraft client. The IP address is automatically copied for you!</p>
+                <div class="server-status">
+                    Server Status: <span id="server-status">Connecting...</span>
+                </div>
+            </div>
         </section>
     </main>
 
